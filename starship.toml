@@ -1,4 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
+command_timeout = 1500
 
 [bun]
 format = '\[[$symbol($version)]($style)\]'
@@ -27,15 +28,6 @@ format = '\[[$symbol($version)]($style)\]'
 [hg_branch]
 format = '\[[$symbol$branch]($style)\]'
 
-[java]
-format = '\[[$symbol($version)]($style)\]'
-
-[kubernetes]
-format = '\[[$symbol$context( \($namespace\))]($style)\]'
-
-[lua]
-format = '\[[$symbol($version)]($style)\]'
-
 [memory_usage]
 format = '\[$symbol[$ram( | $swap)]($style)\]'
 
@@ -47,9 +39,6 @@ format = '\[[$symbol]($style)\]'
 
 [package]
 format = '\[[$symbol$version]($style)\]'
-
-[php]
-format = '\[[$symbol($version)]($style)\]'
 
 [python]
 format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
@@ -69,3 +58,4 @@ format = '\[[$user]($style)\]'
 [character]
 success_symbol = "[➜](bold green)"
 error_symbol = "[➜](bold red)"
+
